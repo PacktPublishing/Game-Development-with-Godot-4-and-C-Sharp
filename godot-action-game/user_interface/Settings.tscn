@@ -1,0 +1,200 @@
+[gd_scene load_steps=6 format=3 uid="uid://cwhdqkrdiwkjh"]
+
+[ext_resource type="Theme" uid="uid://dtkxfffjm5b1w" path="res://user_interface/UI_Theme.tres" id="1_rwpqm"]
+[ext_resource type="Script" path="res://user_interface/Settings.cs" id="2_17c0t"]
+[ext_resource type="AudioStream" uid="uid://13n11ejt6dt4" path="res://user_interface/Ancient Mystery Waltz Presto.mp3" id="3_0k143"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_45rdj"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7ai46"]
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_rwpqm")
+script = ExtResource("2_17c0t")
+metadata/_edit_use_anchors_ = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_rwpqm")
+color = Color(0.670588, 0.831373, 0.964706, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="TabBar" type="TabBar" parent="CanvasLayer/ColorRect"]
+layout_direction = 2
+layout_mode = 0
+offset_left = 90.0
+offset_top = 55.0
+offset_right = 489.0
+offset_bottom = 140.0
+tab_count = 2
+tab_0/title = "Audio"
+tab_1/title = "Controls"
+
+[node name="CloseButton" type="Button" parent="CanvasLayer/ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.886285
+anchor_top = 0.0848765
+anchor_right = 0.947049
+anchor_bottom = 0.203704
+theme_override_font_sizes/font_size = 50
+text = "X"
+metadata/_edit_use_anchors_ = true
+
+[node name="AudioPanel" type="Panel" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.048
+anchor_top = 0.204
+anchor_right = 0.962
+anchor_bottom = 0.949
+offset_left = -0.296001
+offset_top = 0.807999
+offset_right = -0.224121
+offset_bottom = 0.0479736
+theme = ExtResource("1_rwpqm")
+theme_override_styles/panel = SubResource("StyleBoxEmpty_45rdj")
+
+[node name="MusicSlider" type="HSlider" parent="CanvasLayer/AudioPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.359096
+anchor_top = 0.44596
+anchor_right = 0.77764
+anchor_bottom = 0.620272
+offset_left = -10.8403
+offset_top = -79.8867
+offset_right = -11.0031
+offset_bottom = -79.8409
+max_value = 1.0
+step = 0.05
+value = 1.0
+tick_count = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MusicLabel" type="Label" parent="CanvasLayer/AudioPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0558032
+anchor_top = 0.44596
+anchor_right = 0.388559
+anchor_bottom = 0.603452
+offset_left = -58.7608
+offset_top = -82.8867
+offset_right = -58.0954
+offset_bottom = -51.8605
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 75
+text = "Music"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="SFXSlider" type="HSlider" parent="CanvasLayer/AudioPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.359096
+anchor_top = 0.67226
+anchor_right = 0.77764
+anchor_bottom = 0.846572
+offset_left = -10.8403
+offset_top = -40.3058
+offset_right = -10.8405
+offset_bottom = -40.3058
+max_value = 1.0
+step = 0.05
+value = 1.0
+tick_count = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="SFXLabel" type="Label" parent="CanvasLayer/AudioPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0558032
+anchor_top = 0.67226
+anchor_right = 0.388559
+anchor_bottom = 0.829752
+offset_left = -58.7608
+offset_top = -40.3058
+offset_right = -58.7608
+offset_bottom = -9.27963
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 75
+text = "SFX"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ControlsPanel" type="Panel" parent="CanvasLayer"]
+visible = false
+offset_left = 55.0
+offset_top = 133.0
+offset_right = 1108.0
+offset_bottom = 615.0
+theme = ExtResource("1_rwpqm")
+theme_override_styles/panel = SubResource("StyleBoxTexture_7ai46")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/ControlsPanel"]
+layout_mode = 0
+offset_left = 77.0
+offset_right = 287.0
+offset_bottom = 474.0
+theme_override_constants/separation = 25
+alignment = 1
+
+[node name="Left" type="Button" parent="CanvasLayer/ControlsPanel/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_rwpqm")
+text = "Left"
+
+[node name="Right" type="Button" parent="CanvasLayer/ControlsPanel/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_rwpqm")
+text = "Right
+"
+
+[node name="Up" type="Button" parent="CanvasLayer/ControlsPanel/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_rwpqm")
+text = "Up
+"
+
+[node name="Down" type="Button" parent="CanvasLayer/ControlsPanel/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_rwpqm")
+text = "Down
+"
+
+[node name="Jump" type="Button" parent="CanvasLayer/ControlsPanel/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_rwpqm")
+text = "Jump
+"
+
+[node name="Jump2" type="Button" parent="CanvasLayer/ControlsPanel/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_rwpqm")
+text = "Run"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_0k143")
+autoplay = true
+bus = &"Music"
+
+[connection signal="tab_selected" from="CanvasLayer/ColorRect/TabBar" to="." method="TabChanged"]
+[connection signal="button_down" from="CanvasLayer/ColorRect/CloseButton" to="." method="OnSettingsClose"]
+[connection signal="value_changed" from="CanvasLayer/AudioPanel/MusicSlider" to="." method="ChangeMusicVolume"]
+[connection signal="value_changed" from="CanvasLayer/AudioPanel/SFXSlider" to="." method="ChangeSFXVolume"]
+[connection signal="pressed" from="CanvasLayer/ControlsPanel/VBoxContainer/Left" to="." method="OnButtonPressed"]

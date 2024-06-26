@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=3 uid="uid://bl6f5ir88ec3p"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tejba"]
+resource_name = "grass"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.45234, 0.929502, 0.865877, 1)
+metallic = 1.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_wxe3g"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1.00001),
+"format": 34359742465,
+"index_count": 6,
+"index_data": PackedByteArray(2, 0, 0, 0, 1, 0, 1, 0, 3, 0, 2, 0),
+"name": "grass",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_msyww"]
+resource_name = "ground_grass_Mesh ground_grass"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1.00001),
+"attribute_data": PackedByteArray(246, 122, 157, 193, 246, 122, 165, 65, 246, 122, 157, 193, 246, 122, 149, 193, 246, 122, 157, 65, 246, 122, 165, 65, 246, 122, 157, 65, 246, 122, 149, 193),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(2, 0, 0, 0, 1, 0, 1, 0, 3, 0, 2, 0),
+"material": SubResource("StandardMaterial3D_tejba"),
+"name": "grass",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 255, 127, 255, 255, 255, 255, 255, 191, 255, 127, 255, 255, 255, 255, 255, 191, 255, 127, 255, 255, 255, 255, 255, 191, 255, 127, 255, 255, 255, 255, 255, 191)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_wxe3g")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_3au33"]
+data = PackedVector3Array(0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, -0.5, -0.5, 0, -0.5, 0.5, 0, -0.5, 0.5, 0, 0.5)
+
+[node name="ground_grass" type="Node3D"]
+
+[node name="tmpParent" type="Node3D" parent="."]
+
+[node name="ground_grass2" type="MeshInstance3D" parent="tmpParent"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+mesh = SubResource("ArrayMesh_msyww")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="tmpParent/ground_grass2"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="tmpParent/ground_grass2/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_3au33")

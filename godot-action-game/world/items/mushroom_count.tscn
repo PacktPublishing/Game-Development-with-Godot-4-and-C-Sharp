@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cult2tff51a3j"]
+
+[ext_resource type="Script" path="res://world/items/MushroomCount.cs" id="1_c0nmy"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_t8jye"]
+font_size = 45
+font_color = Color(0, 0, 0, 1)
+
+[node name="MushroomCount" type="Label"]
+offset_left = 445.0
+offset_top = 4.0
+offset_right = 755.0
+offset_bottom = 70.0
+label_settings = SubResource("LabelSettings_t8jye")
+script = ExtResource("1_c0nmy")

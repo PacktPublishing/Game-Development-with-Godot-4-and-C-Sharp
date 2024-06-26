@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://4e2cvvp8iibx"]
+
+[ext_resource type="Script" path="res://world/items/CollectibleTrigger.cs" id="1_p745g"]
+
+[node name="StaticBody3D" type="StaticBody3D"]
+collision_layer = 2
+script = ExtResource("1_p745g")

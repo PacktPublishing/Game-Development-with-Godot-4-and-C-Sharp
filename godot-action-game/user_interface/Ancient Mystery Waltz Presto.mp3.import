@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://13n11ejt6dt4"
+path="res://.godot/imported/Ancient Mystery Waltz Presto.mp3-9a9ded73e52455151f09bd367ff532f7.mp3str"
+
+[deps]
+
+source_file="res://user_interface/Ancient Mystery Waltz Presto.mp3"
+dest_files=["res://.godot/imported/Ancient Mystery Waltz Presto.mp3-9a9ded73e52455151f09bd367ff532f7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

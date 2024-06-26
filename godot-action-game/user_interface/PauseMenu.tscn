@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://d27vhkpgaw200"]
+
+[ext_resource type="Theme" uid="uid://dtkxfffjm5b1w" path="res://user_interface/UI_Theme.tres" id="1_unjmc"]
+[ext_resource type="Script" path="res://user_interface/PauseMenu.cs" id="2_avcey"]
+
+[node name="Pause" type="Control"]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_unjmc")
+script = ExtResource("2_avcey")
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(1, 1, 1, 0.784314)
+layout_mode = 0
+anchor_right = 0.999132
+anchor_bottom = 0.996914
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.278019
+anchor_top = 0.0975232
+anchor_right = 0.72285
+anchor_bottom = 0.260062
+theme_override_font_sizes/normal_font_size = 75
+text = "Game Paused"
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+anchor_left = 0.307559
+anchor_top = 0.360681
+anchor_right = 0.694179
+anchor_bottom = 0.795666
+offset_left = -4.0
+offset_right = -4.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ReturnToGame" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Return"
+
+[node name="ReturnToStart" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Main Menu"
+
+[node name="Quit" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Quit"
+
+[connection signal="button_down" from="Panel/VBoxContainer/ReturnToGame" to="." method="ReturnToGame"]
+[connection signal="button_down" from="Panel/VBoxContainer/Quit" to="." method="OnQuit"]

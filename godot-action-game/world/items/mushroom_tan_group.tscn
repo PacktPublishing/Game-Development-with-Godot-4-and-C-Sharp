@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://b31vb68g2bo2b"]
+
+[ext_resource type="PackedScene" uid="uid://bluu5ljc8ab1b" path="res://world/models/mushroom_tanGroup.glb" id="1_jmr75"]
+[ext_resource type="PackedScene" uid="uid://4e2cvvp8iibx" path="res://world/items/PickupComponent.tscn" id="2_ykign"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fybvg"]
+points = PackedVector3Array(0.000623897, 0.196203, -0.112014, -0.0243703, 0, -0.0686439, -0.0611358, 0.196203, -0.0763823, -0.0141298, 0.250488, -0.0492358, 0.000623897, 0.250488, -0.0577455, 0.015404, 0.250488, -0.0492358, 0.0623835, 0.196203, -0.0763823, 0.0243248, 0, -0.0686439, -0.107799, 0, 0.0199118, -0.136329, 0.0922412, 0.0212306, -0.0611358, 0.196203, -0.00504502, -0.0141298, 0.250488, -0.0321915, 0.015404, 0.250488, -0.0321915, 0.0623835, 0.196203, -0.00504502, 0.133302, 0.0603417, 0.0278244, 0.0990434, 0, 0.0300389, -0.107799, 0, 0.0885121, -0.136329, 0.0922412, 0.0945336, -0.0880302, 0.148022, 0.0666406, -0.0728543, 0.148022, 0.0753991, 0.000623897, 0.250488, -0.0236818, 0.0672662, 0.0603417, 0.142183, 0.133302, 0.0603417, 0.104063, 0.0990434, 0, 0.0948819, -0.0728543, 0.0922412, 0.13121, 0.0342222, 0, 0.0948819, 0.000623897, 0.196203, 0.0306112)
+
+[node name="mushroom_tanGroup" instance=ExtResource("1_jmr75")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="tmpParent_mushroom_tanGroup2#StaticBody3D" parent="tmpParent/mushroom_tanGroup" index="0" instance=ExtResource("2_ykign")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.106604, 0.1, -0.0646455)
+
+[node name="tmpParent_mushroom_tanGroup2_StaticBody3D#CollisionShape3D" type="CollisionShape3D" parent="tmpParent/mushroom_tanGroup/tmpParent_mushroom_tanGroup2#StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.105999, -0.1, 0.064804)
+shape = SubResource("ConvexPolygonShape3D_fybvg")

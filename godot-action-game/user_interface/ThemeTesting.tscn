@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://dn43yuip7qgqb"]
+
+[ext_resource type="Script" path="res://user_interface/InGameDisplay.cs" id="1_ev82b"]
+[ext_resource type="Theme" uid="uid://dtkxfffjm5b1w" path="res://user_interface/UI_Theme.tres" id="1_iptpr"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_iptpr")
+script = ExtResource("1_ev82b")
+
+[node name="Play" type="Button" parent="."]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 17.0
+offset_right = 181.0
+offset_bottom = 76.0
+tooltip_text = "This does something first"
+text = "Play
+"
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 171.0
+offset_right = 181.0
+offset_bottom = 230.0
+text = "Quit"
+
+[node name="Settings" type="Button" parent="."]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 94.0
+offset_right = 181.0
+offset_bottom = 153.0
+text = "Settings"

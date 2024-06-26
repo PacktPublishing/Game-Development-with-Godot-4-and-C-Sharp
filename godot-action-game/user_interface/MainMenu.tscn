@@ -1,0 +1,145 @@
+[gd_scene load_steps=7 format=3 uid="uid://cuafte4l8ruhy"]
+
+[ext_resource type="Theme" uid="uid://dtkxfffjm5b1w" path="res://user_interface/UI_Theme.tres" id="1_6ev8p"]
+[ext_resource type="Script" path="res://user_interface/MainMenu.cs" id="2_3mv5f"]
+[ext_resource type="AudioStream" uid="uid://gvc3fq2xo75u" path="res://user_interface/MainMenuTransition.wav" id="3_m48tf"]
+
+[sub_resource type="Animation" id="Animation_km041"]
+resource_name = "MenuTransition"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Panel:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Panel:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(57, -2), Vector2(64, 692)]
+}
+
+[sub_resource type="Animation" id="Animation_gml4b"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Panel:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Panel:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(57, -2)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3ixuu"]
+_data = {
+"MenuTransition": SubResource("Animation_km041"),
+"RESET": SubResource("Animation_gml4b")
+}
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("2_3mv5f")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+top_level = true
+anchors_preset = -1
+anchor_left = 0.0494792
+anchor_right = 0.407986
+anchor_bottom = 1.00463
+offset_left = -3.8147e-05
+offset_top = -2.0
+offset_right = 0.000183105
+offset_bottom = -2.00024
+theme = ExtResource("1_6ev8p")
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Panel"]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.133172
+anchor_top = 0.431644
+anchor_right = 0.8523
+anchor_bottom = 0.967742
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Play" type="Button" parent="CanvasLayer/Panel/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "Start the game!"
+text = "Play"
+
+[node name="Settings" type="Button" parent="CanvasLayer/Panel/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "Customize your experience!"
+text = "Settings"
+
+[node name="Credits" type="Button" parent="CanvasLayer/Panel/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "Customize your experience!"
+text = "Credits"
+
+[node name="Quit" type="Button" parent="CanvasLayer/Panel/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "Say goodbye for now :("
+text = "Quit"
+
+[node name="GameName" type="Label" parent="CanvasLayer/Panel"]
+layout_mode = 2
+anchor_left = 0.056
+anchor_top = 0.16
+anchor_right = 0.937
+anchor_bottom = 0.328
+offset_left = -0.128
+offset_top = -0.160004
+offset_right = 0.0189819
+offset_bottom = -0.171997
+theme_override_font_sizes/font_size = 70
+text = "The Game!"
+horizontal_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_3ixuu")
+}
+
+[node name="MainMenuTransition" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_m48tf")
+bus = &"SFX"
+
+[connection signal="button_down" from="CanvasLayer/Panel/VBoxContainer/Play" to="." method="OnPlayClicked"]
+[connection signal="button_down" from="CanvasLayer/Panel/VBoxContainer/Settings" to="." method="OnSettingsClicked"]
+[connection signal="button_down" from="CanvasLayer/Panel/VBoxContainer/Quit" to="." method="ExitGame"]

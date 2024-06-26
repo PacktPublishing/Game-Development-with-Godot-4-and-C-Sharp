@@ -1,0 +1,37 @@
+[editor_metadata]
+
+executable_path="C:/Users/Baken/Downloads/Godot_v4.1.1-stable_mono_win64(1)/Godot_v4.1.1-stable_mono_win64/Godot_v4.1.1-stable_mono_win64.exe"
+
+[debug_options]
+
+run_live_debug=true
+run_reload_scripts=true
+
+[linked_properties]
+
+Node3D:scale=true
+CharacterBody3D:scale=true
+CollisionShape3D:scale=true
+Camera3D:scale=true
+CSGBox3D:scale=true
+StandardMaterial3D:uv1_scale=true
+StandardMaterial3D:uv2_scale=true
+DirectionalLight3D:scale=true
+
+[dialog_bounds]
+
+create_new_node=Rect2(510, 335, 900, 700)
+editor_settings=Rect2(510, 335, 900, 700)
+
+[script_setup]
+
+last_selected_language="C#"
+
+[recent_files]
+
+scripts=["res://Player.cs"]
+scenes=["res://player/Player.tscn", "res://World.tscn", "res://Player.tscn"]
+
+[color_picker]
+
+recent_presets=PackedColorArray(0.318763, 0.445342, 0.681431, 1, 0.625698, 0.719995, 0.889964, 1, 1, 1, 0.560784, 1, 1, 1, 0.709804, 1, 1, 1, 0.768627, 1, 1, 1, 0.886275, 1, 1, 1, 1, 1, 0.719221, 0.791805, 0.921041, 1)

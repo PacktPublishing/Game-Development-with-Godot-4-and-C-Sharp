@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://bymk1lv0uccc4"]
+
+[ext_resource type="Script" path="res://ForestDweller.cs" id="1_dcbkb"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8tivn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_76win"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_8g7o7"]
+material = SubResource("StandardMaterial3D_76win")
+
+[node name="NPC" type="CharacterBody3D" groups=["npc"]]
+collision_layer = 8
+collision_mask = 4
+floor_constant_speed = true
+script = ExtResource("1_dcbkb")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_8tivn")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
+mesh = SubResource("CapsuleMesh_8g7o7")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+avoidance_enabled = true
+use_3d_avoidance = true
+debug_enabled = true
+debug_path_custom_color = Color(0.803922, 0.00784314, 0.262745, 1)
+debug_path_custom_point_size = 50.0
+
+[connection signal="target_reached" from="NavigationAgent3D" to="." method="OnNavAgentTargetReached"]

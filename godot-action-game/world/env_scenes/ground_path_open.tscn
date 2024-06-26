@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://dgrskcnbwx256"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_evk26"]
+resource_name = "dirt"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.948242, 0.744326, 0.619001, 1)
+metallic = 1.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_tlgie"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.05, -0.5, 1, 9.99868e-06, 1.00001),
+"format": 34359742465,
+"index_count": 24,
+"index_data": PackedByteArray(2, 0, 0, 0, 1, 0, 3, 0, 2, 0, 1, 0, 4, 0, 3, 0, 1, 0, 1, 0, 5, 0, 4, 0, 3, 0, 6, 0, 2, 0, 3, 0, 7, 0, 6, 0, 8, 0, 6, 0, 7, 0, 7, 0, 9, 0, 8, 0),
+"name": "dirt",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 10,
+"vertex_data": PackedByteArray(0, 0, 0, 191, 205, 204, 76, 189, 0, 0, 0, 63, 0, 0, 0, 191, 205, 204, 76, 189, 64, 53, 94, 62, 64, 53, 94, 190, 205, 204, 76, 189, 0, 0, 0, 63, 0, 0, 0, 63, 205, 204, 76, 189, 0, 0, 0, 191, 0, 0, 0, 191, 205, 204, 76, 189, 0, 0, 0, 191, 0, 0, 0, 191, 205, 204, 76, 189, 64, 53, 94, 190, 64, 53, 94, 62, 205, 204, 76, 189, 0, 0, 0, 63, 0, 0, 0, 63, 205, 204, 76, 189, 64, 53, 94, 190, 0, 0, 0, 63, 205, 204, 76, 189, 0, 0, 0, 63, 0, 0, 0, 63, 205, 204, 76, 189, 64, 53, 94, 62)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_droa1"]
+resource_name = "ground_pathOpen_Mesh ground_pathOpen"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.05, -0.5, 1, 9.99868e-06, 1.00001),
+"attribute_data": PackedByteArray(246, 122, 157, 193, 246, 122, 165, 65, 246, 122, 157, 193, 99, 177, 24, 65, 99, 177, 8, 193, 246, 122, 165, 65, 246, 122, 157, 65, 246, 122, 149, 193, 246, 122, 157, 193, 246, 122, 149, 193, 246, 122, 157, 193, 198, 98, 241, 192, 99, 177, 8, 65, 246, 122, 165, 65, 246, 122, 157, 65, 198, 98, 241, 192, 246, 122, 157, 65, 246, 122, 165, 65, 246, 122, 157, 65, 99, 177, 24, 65),
+"format": 34359742487,
+"index_count": 24,
+"index_data": PackedByteArray(2, 0, 0, 0, 1, 0, 3, 0, 2, 0, 1, 0, 4, 0, 3, 0, 1, 0, 1, 0, 5, 0, 4, 0, 3, 0, 6, 0, 2, 0, 3, 0, 7, 0, 6, 0, 8, 0, 6, 0, 7, 0, 7, 0, 9, 0, 8, 0),
+"material": SubResource("StandardMaterial3D_evk26"),
+"name": "dirt",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 10,
+"vertex_data": PackedByteArray(0, 0, 0, 191, 205, 204, 76, 189, 0, 0, 0, 63, 0, 0, 0, 191, 205, 204, 76, 189, 64, 53, 94, 62, 64, 53, 94, 190, 205, 204, 76, 189, 0, 0, 0, 63, 0, 0, 0, 63, 205, 204, 76, 189, 0, 0, 0, 191, 0, 0, 0, 191, 205, 204, 76, 189, 0, 0, 0, 191, 0, 0, 0, 191, 205, 204, 76, 189, 64, 53, 94, 190, 64, 53, 94, 62, 205, 204, 76, 189, 0, 0, 0, 63, 0, 0, 0, 63, 205, 204, 76, 189, 64, 53, 94, 190, 0, 0, 0, 63, 205, 204, 76, 189, 0, 0, 0, 63, 0, 0, 0, 63, 205, 204, 76, 189, 64, 53, 94, 62, 255, 127, 255, 255, 255, 255, 255, 191, 255, 127, 255, 255, 255, 255, 255, 191, 255, 127, 255, 255, 255, 255, 255, 191, 255, 127, 255, 255, 255, 255, 255, 191, 255, 127, 255, 255, 255, 255, 255, 191, 255, 127, 255, 255, 255, 255, 255, 191, 255, 127, 255, 255, 255, 255, 255, 191, 255, 127, 255, 255, 255, 255, 255, 191, 255, 127, 255, 255, 255, 255, 255, 191, 255, 127, 255, 255, 255, 255, 255, 191)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_tlgie")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xck0y"]
+points = PackedVector3Array(-0.5, -0.05, -0.5, -0.5, -0.05, 0.5, 0.5, -0.05, -0.5, 0.5, -0.05, 0.5)
+
+[node name="ground_pathOpen" type="Node3D"]
+
+[node name="tmpParent" type="Node3D" parent="."]
+
+[node name="ground_pathOpen2" type="MeshInstance3D" parent="tmpParent"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+mesh = SubResource("ArrayMesh_droa1")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="tmpParent/ground_pathOpen2"]
+collision_layer = 5
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="tmpParent/ground_pathOpen2/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_xck0y")
