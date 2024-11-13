@@ -1,6 +1,6 @@
 is_global = true
 build_property.GodotDisabledSourceGenerators = 
-build_property.GodotProjectDir = C:\Users\Baken\Documents\third-person-action\godot-action-game\
+build_property.GodotProjectDir = c:\Users\Baken\Documents\Game-Development-with-Godot-4-and-C-Sharp\godot-action-game\
 build_property.GodotProjectDirBase64 = 
 build_property.GodotSourceGenerators = 
 build_property.IsGodotToolsProject = 
@@ -13,4 +13,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = thirdpersonaction
-build_property.ProjectDir = C:\Users\Baken\Documents\third-person-action\godot-action-game\
+build_property.ProjectDir = c:\Users\Baken\Documents\Game-Development-with-Godot-4-and-C-Sharp\godot-action-game\

@@ -5,14 +5,20 @@
     "tasks": [
         {
             "label": "build",
-            "group": "build",
+            "command": "dotnet",
             "type": "shell",
-            "command": "scons",
             "args": [
-              // enable for debugging with breakpoints
-              "${workspaceFolder}"
+                "build",
+                // Ask dotnet build to generate full paths for file names.
+                "/property:GenerateFullPaths=true",
+                // Do not generate summary otherwise it leads to duplicate errors in Problems panel
+                "/consoleloggerparameters:NoSummary"
             ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
             "problemMatcher": "$msCompile"
-          }
+        }
     ]
 }
