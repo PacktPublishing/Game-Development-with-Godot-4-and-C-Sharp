@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("third-person-action")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d32a41598866de23f271956aa232477948f5b415")]
 [assembly: System.Reflection.AssemblyProductAttribute("third-person-action")]
 [assembly: System.Reflection.AssemblyTitleAttribute("third-person-action")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

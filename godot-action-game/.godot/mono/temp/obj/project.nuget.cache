@@ -1,15 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "2XSeVHXaY+jUHytLHa64XEZ6Dq8ApezxYjcVdIvBBPITaepWjvFoFiZ5k4ozSFhyXnhrDcdrwtfR2rUIfXv3Aw==",
+  "dgSpecHash": "TwnPI4MeTdQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Baken\\Documents\\third-person-action\\godot-action-game\\third-person-action.csproj",
+  "projectFilePath": "C:\\Users\\Baken\\Documents\\Game-Development-with-Godot-4-and-C-Sharp\\godot-action-game\\third-person-action.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Baken\\.nuget\\packages\\godot.sourcegenerators\\4.2.2\\godot.sourcegenerators.4.2.2.nupkg.sha512",
-    "C:\\Users\\Baken\\.nuget\\packages\\godotsharp\\4.2.2\\godotsharp.4.2.2.nupkg.sha512",
-    "C:\\Users\\Baken\\.nuget\\packages\\godotsharpeditor\\4.2.2\\godotsharpeditor.4.2.2.nupkg.sha512",
-    "C:\\Users\\Baken\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.13\\microsoft.netcore.app.ref.6.0.13.nupkg.sha512",
-    "C:\\Users\\Baken\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.13\\microsoft.windowsdesktop.app.ref.6.0.13.nupkg.sha512",
-    "C:\\Users\\Baken\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.13\\microsoft.aspnetcore.app.ref.6.0.13.nupkg.sha512"
+    "C:\\Users\\Baken\\.nuget\\packages\\godot.sourcegenerators\\4.5.1\\godot.sourcegenerators.4.5.1.nupkg.sha512",
+    "C:\\Users\\Baken\\.nuget\\packages\\godotsharp\\4.5.1\\godotsharp.4.5.1.nupkg.sha512",
+    "C:\\Users\\Baken\\.nuget\\packages\\godotsharpeditor\\4.5.1\\godotsharpeditor.4.5.1.nupkg.sha512"
   ],
   "logs": []
 }

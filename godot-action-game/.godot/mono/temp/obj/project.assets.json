@@ -1,38 +1,38 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "Godot.SourceGenerators/4.2.2": {
+    "net8.0": {
+      "Godot.SourceGenerators/4.5.1": {
         "type": "package",
         "build": {
           "build/Godot.SourceGenerators.props": {}
         }
       },
-      "GodotSharp/4.2.2": {
+      "GodotSharp/4.5.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/GodotSharp.dll": {
+          "lib/net8.0/GodotSharp.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/GodotSharp.dll": {
+          "lib/net8.0/GodotSharp.dll": {
             "related": ".xml"
           }
         }
       },
-      "GodotSharpEditor/4.2.2": {
+      "GodotSharpEditor/4.5.1": {
         "type": "package",
         "dependencies": {
-          "GodotSharp": "4.2.2"
+          "GodotSharp": "4.5.1"
         },
         "compile": {
-          "lib/net6.0/GodotSharpEditor.dll": {
+          "lib/net8.0/GodotSharpEditor.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/GodotSharpEditor.dll": {
+          "lib/net8.0/GodotSharpEditor.dll": {
             "related": ".xml"
           }
         }
@@ -40,51 +40,51 @@
     }
   },
   "libraries": {
-    "Godot.SourceGenerators/4.2.2": {
-      "sha512": "QGO7NjcG4W1doQTOXBp2TgAK+a6npFX2dYCw1CXttRh3/UI76sQnCUUe9/U95e6uMO9SzVK7wzEH3H4qGpOr4g==",
+    "Godot.SourceGenerators/4.5.1": {
+      "sha512": "HOHYJQO5A/kzf5CUobeTPOX+JawSvjkDE0v/Fyo4EMYEC2MvCTGUvpJFjqQQmHYLNsiiB7RLVilcnup+jiVfdA==",
       "type": "package",
-      "path": "godot.sourcegenerators/4.2.2",
+      "path": "godot.sourcegenerators/4.5.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/Godot.SourceGenerators.dll",
         "build/Godot.SourceGenerators.props",
-        "godot.sourcegenerators.4.2.2.nupkg.sha512",
+        "godot.sourcegenerators.4.5.1.nupkg.sha512",
         "godot.sourcegenerators.nuspec"
       ]
     },
-    "GodotSharp/4.2.2": {
-      "sha512": "J2ZXDTuS4LlbPIOK2HCBD9lKNFvBzJLv6LIyFC3fAUKgUXZHvoKP/uwS+Iv/CrMZqsa+lQ+Wb4zfp5xoBrSCcw==",
+    "GodotSharp/4.5.1": {
+      "sha512": "5CFnEHT+FByv5desNHMipz/209SCrWR9CGWFZjGHnXupl1Rw8U8q4nf65/unqZVL97Rx+3J5hskPMoDGaiZL9g==",
       "type": "package",
-      "path": "godotsharp/4.2.2",
+      "path": "godotsharp/4.5.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "godotsharp.4.2.2.nupkg.sha512",
+        "godotsharp.4.5.1.nupkg.sha512",
         "godotsharp.nuspec",
-        "lib/net6.0/GodotSharp.dll",
-        "lib/net6.0/GodotSharp.xml"
+        "lib/net8.0/GodotSharp.dll",
+        "lib/net8.0/GodotSharp.xml"
       ]
     },
-    "GodotSharpEditor/4.2.2": {
-      "sha512": "nNXntakfzSuH5AnQKBpznN8pF+3uYj9XmGIEMeR+6GOzg8gxx2b09bhVZm3q6onzldPEoo1YChBRL1zWWjOM6Q==",
+    "GodotSharpEditor/4.5.1": {
+      "sha512": "8CM49047b0Us3qPJo6L7kdldreOvR7JCoXlKoSHzpA0TQP6+Qnoxz/26GZ1ONg2wW4vV9uzor0AHXSGUFP9XSw==",
       "type": "package",
-      "path": "godotsharpeditor/4.2.2",
+      "path": "godotsharpeditor/4.5.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "godotsharpeditor.4.2.2.nupkg.sha512",
+        "godotsharpeditor.4.5.1.nupkg.sha512",
         "godotsharpeditor.nuspec",
-        "lib/net6.0/GodotSharpEditor.dll",
-        "lib/net6.0/GodotSharpEditor.xml"
+        "lib/net8.0/GodotSharpEditor.dll",
+        "lib/net8.0/GodotSharpEditor.xml"
       ]
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "Godot.SourceGenerators >= 4.2.2",
-      "GodotSharp >= 4.2.2",
-      "GodotSharpEditor >= 4.2.2"
+    "net8.0": [
+      "Godot.SourceGenerators >= 4.5.1",
+      "GodotSharp >= 4.5.1",
+      "GodotSharpEditor >= 4.5.1"
     ]
   },
   "packageFolders": {
@@ -94,11 +94,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Baken\\Documents\\third-person-action\\godot-action-game\\third-person-action.csproj",
+      "projectUniqueName": "C:\\Users\\Baken\\Documents\\Game-Development-with-Godot-4-and-C-Sharp\\godot-action-game\\third-person-action.csproj",
       "projectName": "third-person-action",
-      "projectPath": "C:\\Users\\Baken\\Documents\\third-person-action\\godot-action-game\\third-person-action.csproj",
+      "projectPath": "C:\\Users\\Baken\\Documents\\Game-Development-with-Godot-4-and-C-Sharp\\godot-action-game\\third-person-action.csproj",
       "packagesPath": "C:\\Users\\Baken\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Baken\\Documents\\third-person-action\\godot-action-game\\.godot\\mono\\temp\\obj\\",
+      "outputPath": "C:\\Users\\Baken\\Documents\\Game-Development-with-Godot-4-and-C-Sharp\\godot-action-game\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Users\\Baken\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder"
@@ -109,15 +109,15 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net8.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -125,23 +125,31 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "dependencies": {
           "Godot.SourceGenerators": {
             "target": "Package",
-            "version": "[4.2.2, )"
+            "version": "[4.5.1, )",
+            "autoReferenced": true
           },
           "GodotSharp": {
             "target": "Package",
-            "version": "[4.2.2, )"
+            "version": "[4.5.1, )",
+            "autoReferenced": true
           },
           "GodotSharpEditor": {
             "target": "Package",
-            "version": "[4.2.2, )"
+            "version": "[4.5.1, )",
+            "autoReferenced": true
           }
         },
         "imports": [
@@ -155,26 +163,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.13, 6.0.13]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.13, 6.0.13]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.13, 6.0.13]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.416/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

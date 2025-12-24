@@ -12,8 +12,6 @@ public partial class Collectible : Node3D
 		_tween.TweenProperty(this, "position:y", .25f, 1f).AsRelative();
 		_tween.TweenProperty(this, "rotation:x", ChooseRandomDegree(), 1f).AsRelative();
 		_tween.TweenInterval(.2f);
-		_tween.TweenProperty(this, "position:y", -.25f, 1f).AsRelative();
-		_tween.TweenProperty(this, "rotation:x", ChooseRandomDegree(), 1f).AsRelative();
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

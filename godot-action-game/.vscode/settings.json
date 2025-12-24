@@ -123,6 +123,6 @@
   "omnisharp.enableMsBuildLoadProjectsOnDemand": false,
   "omnisharp.enableRoslynAnalyzers": true,
   "omnisharp.maxFindSymbolsItems": 3000,
-  "omnisharp.organizeImportsOnFormat": true,
   "omnisharp.useModernNet": true,
+  "dotnet.formatting.organizeImportsOnFormat": true,
 }

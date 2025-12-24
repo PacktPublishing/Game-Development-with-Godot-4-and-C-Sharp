@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bymk1lv0uccc4"]
 
-[ext_resource type="Script" path="res://ForestDweller.cs" id="1_dcbkb"]
+[ext_resource type="Script" uid="uid://bbwxbnrcb741f" path="res://world/npc/ForestDweller.cs" id="1_dcbkb"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8tivn"]
 

@@ -6,8 +6,8 @@ public partial class World : Node3D
 {
 	[Export] PackedScene _menu;
 
-	[Signal]
-	public delegate void CreatePatrolEventHandler();
+	//[Signal]
+	//public delegate void CreatePatrolEventHandler();
 	public SignalBus _signals;
 	public int numOfMushrooms;
 	public bool moveNPC = true;
@@ -25,18 +25,7 @@ public partial class World : Node3D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		numOfMushrooms = 0;
-
-		//_signals.HideMainMenu += PlayerStart;
-		/*SignalBus.Instance.Connect(SignalBus.SignalName.HideMainMenu, new Callable(this, MethodName.CreatePatrolPath));
-		if(SignalBus.Instance.IsConnected(SignalBus.SignalName.HideMainMenu, new Callable(this, MethodName.CreatePatrolPath)))
-		{
-			GD.Print("We connected!");
-		}*/
-		//Node mainMenuScene = ResourceLoader.Load<PackedScene>("res://user_interface/MainMenu.tscn").Instantiate();
-		//AddChild((Control)mainMenuScene);
-		
-		CreatePatrol += () => CreatePatrolPath();
+		//CreatePatrol += () => CreatePatrolPath();
 		
 		var loadMenu = _menu.Instantiate();
 		AddChild(loadMenu);
@@ -81,10 +70,12 @@ public partial class World : Node3D
 		player.ProcessMode = ProcessModeEnum.Always;
 		Input.MouseMode = Input.MouseModeEnum.Captured;
 		moveNPC = true;
-		if(SignalName.CreatePatrol != null)
+		CreatePatrolPath();
+		/*if(SignalName.CreatePatrol != null)
 		{
+			GD.Print("Emitting signal!");
 			EmitSignal(SignalName.CreatePatrol);
-		}
+		}*/
 	}
 
 	public void ChooseRandomPatrolPoint()

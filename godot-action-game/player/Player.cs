@@ -42,11 +42,17 @@ public partial class Player : CharacterBody3D
 
 	public override void _Ready()
 	{
+		//Initialize variables and access nodes
 		anim = GetNode<AnimationTree>("AnimationTree");
+
+		//Mkaing our Model follow the Camera
 		body = GetNode<Node3D>("%Body");
 		rotation = body.Rotation;
+		
 		cameraPivot = GetNode<Node3D>("%CameraPivot");
 		capsule = GetNode<CollisionShape3D>("CollisionShape3D");
+
+		//Lock cursor to the center of the screen
 		Input.MouseMode = Input.MouseModeEnum.Captured;
 	}
 	public override void _Input(InputEvent @event)

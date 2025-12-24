@@ -7,13 +7,13 @@
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Baken\.nuget\packages\;C:\Users\Baken\AppData\Roaming\Godot\mono\GodotNuGetFallbackFolder</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.4.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.11.1</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\Baken\.nuget\packages\" />
     <SourceRoot Include="C:\Users\Baken\AppData\Roaming\Godot\mono\GodotNuGetFallbackFolder\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)godot.sourcegenerators\4.2.2\build\Godot.SourceGenerators.props" Condition="Exists('$(NuGetPackageRoot)godot.sourcegenerators\4.2.2\build\Godot.SourceGenerators.props')" />
+    <Import Project="$(NuGetPackageRoot)godot.sourcegenerators\4.5.1\build\Godot.SourceGenerators.props" Condition="Exists('$(NuGetPackageRoot)godot.sourcegenerators\4.5.1\build\Godot.SourceGenerators.props')" />
   </ImportGroup>
 </Project>

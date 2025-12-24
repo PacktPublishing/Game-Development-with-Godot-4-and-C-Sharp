@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Baken\\Documents\\third-person-action\\godot-action-game\\third-person-action.csproj": {}
+    "C:\\Users\\Baken\\Documents\\Game-Development-with-Godot-4-and-C-Sharp\\godot-action-game\\third-person-action.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Baken\\Documents\\third-person-action\\godot-action-game\\third-person-action.csproj": {
+    "C:\\Users\\Baken\\Documents\\Game-Development-with-Godot-4-and-C-Sharp\\godot-action-game\\third-person-action.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Baken\\Documents\\third-person-action\\godot-action-game\\third-person-action.csproj",
+        "projectUniqueName": "C:\\Users\\Baken\\Documents\\Game-Development-with-Godot-4-and-C-Sharp\\godot-action-game\\third-person-action.csproj",
         "projectName": "third-person-action",
-        "projectPath": "C:\\Users\\Baken\\Documents\\third-person-action\\godot-action-game\\third-person-action.csproj",
+        "projectPath": "C:\\Users\\Baken\\Documents\\Game-Development-with-Godot-4-and-C-Sharp\\godot-action-game\\third-person-action.csproj",
         "packagesPath": "C:\\Users\\Baken\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Baken\\Documents\\third-person-action\\godot-action-game\\.godot\\mono\\temp\\obj\\",
+        "outputPath": "C:\\Users\\Baken\\Documents\\Game-Development-with-Godot-4-and-C-Sharp\\godot-action-game\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Users\\Baken\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder"
@@ -22,15 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -38,23 +38,31 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Godot.SourceGenerators": {
               "target": "Package",
-              "version": "[4.2.2, )"
+              "version": "[4.5.1, )",
+              "autoReferenced": true
             },
             "GodotSharp": {
               "target": "Package",
-              "version": "[4.2.2, )"
+              "version": "[4.5.1, )",
+              "autoReferenced": true
             },
             "GodotSharpEditor": {
               "target": "Package",
-              "version": "[4.2.2, )"
+              "version": "[4.5.1, )",
+              "autoReferenced": true
             }
           },
           "imports": [
@@ -68,26 +76,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.416/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
