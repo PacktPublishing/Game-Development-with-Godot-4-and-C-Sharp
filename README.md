@@ -91,7 +91,7 @@ install Godot Engine 4.5.1. You can download Godot Engine 4.5.1 (.NET version) f
 
 
 <details> 
-  <summary><h2>Get to know Authors</h2></summary>
+  <summary><h2>Get to know Author</h2></summary>
 
 _Kati Baker_ is a Staff Engineer who has been creating games since her first game jam in 2016. She is a programmer by trade and has spent part of her professional career in education, working as an Outreach Coordinator for NASA and a CS Innovator for 4-H. In both, she's worked with students to encourage learning in STEM, specifically computer science. In her spare time, she runs a monthly game jam, Godot Wild Jam, and completes her own personal projects. She has also given talks at leading conferences for her work with Godot. She is a big believer in continuing to learn, no matter what. Kati earned her Bachelors of Science in Computer Science from West Virginia University, and currently resides in West Virginia with her partner and plants.
 
